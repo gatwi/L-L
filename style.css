@@ -75,6 +75,11 @@ body{
 .navbar.sticky .menu li a:hover{
     color: black;
 }
+.menu-btn{
+    color: black;
+    font-size: 23px;
+    cursor: pointer;
+}
 /* styling the home-section */
 .home{
     width: 300%;
