@@ -15,7 +15,7 @@
 }
 
 body{
-    background: lightgray;
+    background: #fff;
     width: 100%;
     display: block;
     margin: auto;
@@ -45,8 +45,9 @@ body{
 }
 .navbar .logo a{
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
+    margin-left: -5%;
 }
 .navbar .logo a span{
     color: crimson;
@@ -77,6 +78,7 @@ body{
     color: black;
 }
 
+
 /* styling the home-section */
 .home{
     width: 300%;
@@ -84,9 +86,10 @@ body{
     background: url("images/dark.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    padding: 10 250px;
+    padding: 10 200px;
     display: flex;
     color: #fff;
+    min-height: 500px;
     align-items: center;
     position: relative;
     top: 10px;
@@ -116,3 +119,156 @@ body{
     font-weight: 500;
 }
 
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
+
+/* about section */
+.section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+    font-weight: 400px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who we are!";
+    position: absolute;
+    bottom: 25px;
+    background: #fff;
+    left: 50%;
+    color: crimson;
+    font-size: 20px;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+/* activities section */
+
+.section{
+    padding: 100px 0;
+}
+.activities{
+    font-family: 'Poppins', sans-serif;
+}
+.activities .title{
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+    font-weight: 400px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.activities .title::before{
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 250px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.activities .title::after{
+    content: "what we're about!";
+    position: absolute;
+    bottom: 25px;
+    background: #fff;
+    left: 50%;
+    color: crimson;
+    font-size: 20px;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media queries
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar .menu{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+    }
+} */
